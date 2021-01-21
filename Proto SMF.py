@@ -31,24 +31,25 @@ div_score = 0
 
 
 def Additions ():
+    
     play = True
     counter = 0
     err = 0
     score = counter - err
     total_counter = 0
     total_score = 0
-    while play == True:
+    while play:
          
         try_b = [1,2,3,4,5,6,7,8,9,10]
         # try_b = list(range(1, 11))
         
         a = int(input("choisi la table d'addition sur laquelle tu veux t'entrainer: "))    
         
-        while len(try_b) > 0:                                    # boucle propositions equations
-            # while try_b:
+        while try_b:                                                           # boucle propositions equations
+            
             b = random.choice(try_b)
             target = a + b
-            while True:                                          # boucle des essais utlisateurs
+            while True:                                                        # boucle des essais utlisateurs
                 s = input("\n{0} + {1} = ".format(a,b))
                 # s = input("\n{} + {} = ".format(a,b))
                 # s = input(f"\n{a} + {b}")
@@ -77,12 +78,12 @@ def Additions ():
                                             
                     else:
                         if err == 0:
-                            print("\nBINGO !, tu as réussi DU PREMIER COUP ! \nBravo !")
+                            print("\nBINGO ! tu as réussi DU PREMIER COUP ! \nBravo !")
                             counter+=1
                             try_b.pop(try_b.index(b))
                                                
                         else:
-                            print("\nBravo ! , tu as réussi au bout de {0} tentatives.".format(err))
+                            print("\nBravo ! tu as réussi au bout de {0} tentatives.".format(err))
                             counter+=1
                             try_b.pop(try_b.index(b))
                         break
@@ -102,9 +103,9 @@ def Additions ():
             
             return 
 
+
 def menu():
     
-
     entry_1 = " 1. Additions"
     entry_2 = " 2. Soustractions (pas pret encore)"
     entry_3 = " 3. Multiplications (pas pret encore)"
