@@ -1,2 +1,2 @@
 # Super-Maths-Forces
-Entrainement aux mathématiques - niveau cours Elémentaires
+projet perso 1: programme d'Entrainement aux mathématiques - niveau cours Elémentaires
